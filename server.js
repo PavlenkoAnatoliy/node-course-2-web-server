@@ -46,6 +46,12 @@ app.get('/about', (req, res) => {
   });
 })
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page',
+  });
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage:'<h1>Error handler request</h1>',
